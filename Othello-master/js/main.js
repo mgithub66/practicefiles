@@ -160,6 +160,7 @@ let seeCol = (offsetx)=>{
       arr.push(document.querySelector('table').rows[i].cells[j]);
       j--;
     }
+    break;
     case 8:
     j=7;
     for(let i = 1;i<8;i++){
@@ -374,6 +375,6 @@ grid.addEventListener('click',(e)=>{
 
 });
  
-console.log(seeCross(7,2));
+
 
 }
