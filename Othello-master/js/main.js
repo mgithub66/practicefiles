@@ -67,10 +67,12 @@ let seeCol = (offsetx)=>{
         arr.push(document.querySelector('table').rows[i].cells[j]);
         j++;
       }
+      break;
       case 6: for(let i = 0;i<2;i++){
         arr.push(document.querySelector('table').rows[i].cells[j]);
         j++;
       }
+      break;
       case 7: arr.push(document.querySelector('table').rows[0].cells[j]);
       break;
     }
@@ -353,7 +355,7 @@ let cell = document.querySelectorAll('.cell');
 grid.addEventListener('click',(e)=>{
   e.preventDefault();
   if(e.target.style.background == "blue"){
-    for(let i = 0; i<63;i++){
+    for(let i = 0; i<64;i++){
       cell[i].style.background= "none";
     }
     if(player1){
@@ -371,5 +373,7 @@ grid.addEventListener('click',(e)=>{
 
 
 });
-  
+ 
+console.log(seeCross(7,2));
+
 }
